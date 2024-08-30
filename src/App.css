@@ -1,0 +1,41 @@
+:root{
+    --bg-prymary: #0A3871;
+    --bg-secondary: #D8DFE8;
+    --bg-tertiary: #F3F5FC;
+    --bg-quarter: #FFF;
+    --color-prymary: #fff;
+    --color-secondary: #0A3871;
+    --color-tertiary: #495057;
+    --bg-button-prymary: #0A3871;
+    --bg-button-secondary: #D8DFE8;
+}
+
+#container-app{
+    width: 100%;
+    height: 98vh;
+    border: 1px olid red;
+    display: flex;
+    gap: 20px;
+    & section{
+        border: 1px solid black;
+        margin: 15px;
+    }
+}
+
+
+
+#section-encriptar{
+    width: 60%;
+}
+
+#section-letra{
+    width: 6%;
+
+    & img{
+        width: 100%;
+    }
+}
+
+#section-desencriptar{
+    width: 34%;
+}
