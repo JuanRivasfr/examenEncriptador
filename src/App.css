@@ -1,4 +1,4 @@
-:root{
+:root {
     --bg-prymary: #0A3871;
     --bg-secondary: #D8DFE8;
     --bg-tertiary: #F3F5FC;
@@ -10,32 +10,101 @@
     --bg-button-secondary: #D8DFE8;
 }
 
-#container-app{
+#container-app {
     width: 100%;
     height: 98vh;
     border: 1px olid red;
     display: flex;
     gap: 20px;
-    & section{
-        border: 1px solid black;
+
+    & section {
         margin: 15px;
     }
 }
 
+#textarea-encriptar {
+    min-width: 98%;
+    margin: 8px;
+    background-color: transparent;
+    border: 0;
+    min-height: 85%;
+    resize: none;
+}
 
+#textarea-encriptar::placeholder {
+    color: var(--color-secondary);
+    font-size: 25px;
+}
 
-#section-encriptar{
+#section-encriptar {
     width: 60%;
 }
 
-#section-letra{
+#section-letra {
     width: 6%;
 
-    & img{
+    & img {
         width: 100%;
     }
 }
 
-#section-desencriptar{
-    width: 34%;
+#section-desencriptar {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-quarter);
+    border-radius: 30px;
+}
+
+#p-encriptar {
+    margin: 8px;
+    color: var(--color-secondary);
+    font-size: 15px;
+    border: 100%;
+    text-align: center;
+}
+
+#encriptar-botones {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    & button {
+        width: 20%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+}
+
+#button-encriptar {
+    color: var(--bg-button-secondary);
+    background-color: var(--bg-button-prymary);
+    border: 0;
+}
+
+#button-desencriptar {
+    color: var(--bg-button-prymary);
+    background-color: transparent;
+    border: 1px solid var(--bg-button-prymary);
+}
+
+#textarea-desencriptar {
+    min-width: 96%;
+    margin: 8px;
+    background-color: transparent;
+    resize: none;
+    border: 0;
+    min-height: 88%;
+}
+
+#button-copiar {
+    width: 55%;
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--bg-button-prymary);
+    background-color: transparent;
+    border: 1px solid var(--bg-button-prymary);
 }

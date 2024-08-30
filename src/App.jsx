@@ -72,7 +72,8 @@ export const App = () => {
         <img src="./public/letra.png" alt="" />
       </section>
       <section id='section-encriptar'>
-        <textarea id="textarea-encriptar" cols="30" rows="10" placeholder='Ingrese su texto aqui'></textarea>
+        <textarea id="textarea-encriptar" cols="30" rows="10" placeholder='Ingrese el texto aqui'></textarea>
+        <p id='p-encriptar'>Solo letras minusculas y sin acentos</p>
         <div id='encriptar-botones'>
           <button id='button-encriptar' onClick={() => handleClickEncriptar()}>
             Encriptar
@@ -83,7 +84,7 @@ export const App = () => {
         </div>
       </section>
       <section id='section-desencriptar'>
-        <textarea id="textarea-desencriptar" cols="30" rows="10" readOnly></textarea>
+        <textarea id="textarea-desencriptar" cols="30" rows="10" readOnly placeholder='Ingresa el texto que desees encriptar o desencriptar'></textarea>
         <button id='button-copiar' onClick={() => handleClickCopiar()}>copiar</button>
       </section>
     </div>
